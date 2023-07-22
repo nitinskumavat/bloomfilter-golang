@@ -47,7 +47,7 @@ func (b *Bloomfilter) add(key string) {
 func main() {
 	seed = 10
 	bloomFilter := newBloomFilter(16)
-	dataSet := []string{"a", "b","c","d"}
+	dataSet := []string{"a", "b", "c", "d", "e"}
 	for _, key := range dataSet {
 		bloomFilter.add(key)
 	}
